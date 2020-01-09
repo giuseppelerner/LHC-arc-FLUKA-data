@@ -1,6 +1,14 @@
 
 
 ```python
+# First input: FLUKA simulation of radiation levels in a curved sector of the Large Hadron Collider (LHC)
+# Radiation source: interaction of the proton beam with residual gas elements in the beam pipe
+# The LHC arc consists in a regular sequence of 53.45m long half-cells, all with the same structure
+# The simulation includes three subsequent half-cells (18,19,20) 
+# The radiation levels are best modelled in half-cell 20
+# The input files include the radiation level 'scoring' below the different magnets within each half-cell
+
+
 import matplotlib.pyplot as plt
 import time
 import numpy as np
@@ -18,12 +26,6 @@ doAddReverse = True
 
 
 ```python
-# First input: FLUKA simulation of radiation levels in a curved sector of the Large Hadron Collider (LHC)
-# Radiation source: interaction of the proton beam with residual gas elements in the beam pipe
-# The LHC arc consists in a regular sequence of 53.45m long half-cells, all with the same structure
-# The simulation includes three subsequent half-cells (18,19,20) 
-# The radiation levels are best modelled in half-cell 20
-# The input files include the radiation level 'scoring' below the different magnets within each half-cell
 
 halfcellmin = 0.
 halfcellmax = 5345. #5345.
